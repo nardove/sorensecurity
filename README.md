@@ -6,7 +6,7 @@ Visit the site [here](https://sorensecurity.netlify.app/)
 
 ## Tools used
 
-![alt text](./readme-imgs/adobexd-logo.png 'Logo Title Text 1')
-![alt text](./readme-imgs/vscode-logo.png 'Logo Title Text 1')
-![alt text](./readme-imgs/html-logo.png 'Logo Title Text 1')
-![alt text](./readme-imgs/sass-logo.png 'Logo Title Text 1')
+![alt text](./readme-imgs/adobexd-logo.png 'AdobeXD')
+![alt text](./readme-imgs/vscode-logo.png 'VSCode')
+![alt text](./readme-imgs/html-logo.png 'HTML')
+![alt text](./readme-imgs/sass-logo.png 'SASS')
