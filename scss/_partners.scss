@@ -1,0 +1,53 @@
+.partners {
+	background-color: $color-blue;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding-top: $sections-spacing-top;
+		padding-bottom: $sections-spacing-bottom;
+
+		&__body {
+			padding: $sections-spacing-top 4rem 0 4rem;
+			color: $color-grey-light;
+			font-size: 1.4rem;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		&__logos {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-top: $sections-spacing-top;
+
+			@media only screen and (max-width: $bp-medium) {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-row-gap: 4rem;
+
+				& > :nth-child(1) {
+					order: 2;
+				}
+			}
+
+			@media only screen and (max-width: $bp-smallest) {
+				grid-template-columns: 1fr;
+				grid-column-gap: 4rem;
+				& > :nth-child(1) {
+					order: 0;
+				}
+			}
+		}
+	}
+
+	&__logo {
+		fill: $color-grey-light;
+		width: 100%;
+		height: 27px;
+
+		@media only screen and (max-width: $bp-medium) {
+			height: 20px;
+		}
+	}
+}

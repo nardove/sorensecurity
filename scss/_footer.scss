@@ -1,0 +1,102 @@
+.footer {
+	font-size: 1.4rem;
+	color: $color-grey-light;
+	background-image: linear-gradient($color-blue-dark, $color-blue-darker);
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		padding: 4rem 0;
+	}
+
+	&__title {
+		align-self: stretch;
+		text-align: center;
+	}
+
+	&__social-media {
+		margin-top: 4rem;
+
+		&__link:hover &__logo {
+			fill: $color-yellow;
+		}
+
+		&__logo {
+			fill: $color-grey-light;
+			width: 28px;
+			height: 28px;
+			margin: 0 1rem;
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			margin-top: 2rem;
+		}
+	}
+
+	&__nav {
+		width: 100%;
+		margin-top: 4rem;
+
+		&__list {
+			display: flex;
+			justify-content: space-around;
+			position: relative;
+			padding: 0 4rem;
+
+			&__item {
+				list-style: none;
+
+				&__link {
+					color: inherit;
+					text-decoration: none;
+
+					&:hover {
+						color: $color-yellow;
+					}
+				}
+
+				&--world {
+					fill: $color-grey-light;
+					width: 14px;
+					height: 14px;
+					margin-right: 0.5rem;
+
+					&:hover {
+						fill: $color-yellow;
+					}
+				}
+			}
+
+			@media only screen and (max-width: $bp-medium) {
+				padding: 0;
+
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 2rem;
+				justify-items: center;
+			}
+
+			@media only screen and (max-width: $bp-smallest) {
+				grid-template-columns: 1fr;
+				grid-gap: 2rem;
+				justify-items: center;
+			}
+		}
+	}
+
+	&__copy {
+		margin-top: 4rem;
+		font-size: 1.2rem;
+		display: flex;
+		align-items: flex-end;
+
+		&__logo {
+			fill: $color-grey-light;
+			width: 106px;
+			height: 23px;
+			margin-right: 1rem;
+		}
+	}
+}

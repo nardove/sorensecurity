@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap');
+
+$color-yellow: #fdc500;
+$color-yellow-light: #ffd500;
+
+$color-blue-darker: #00152e;
+$color-blue-dark: #00296b;
+$color-blue: #003f88;
+$color-blue-light: #00509d;
+
+$color-grey-darker: #393e59;
+$color-grey-dark: #565c75;
+$color-grey: #d8d8d9;
+$color-grey-light: #f0f0f1;
+
+$sections-spacing-top: 4rem;
+$sections-spacing-bottom: 4rem;
+
+$bp-large: 62.5em; // 1000
+$bp-medium: 50em; // 800
+// $bp-small: 37.5em; // 600
+$bp-small: 40.625em; // 650
+$bp-smallest: 31.25em; // 500
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+
+	@media only screen and (max-width: $bp-large) {
+		max-width: 800px;
+	}
+
+	@media only screen and (max-width: $bp-medium) {
+		max-width: 600px;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		max-width: 500px;
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		max-width: 100%;
+	}
+}
+
+.section__title {
+	font-size: 3.2rem;
+	margin: 0 20%;
+	text-align: center;
+
+	&--light {
+		color: $color-grey-light;
+	}
+
+	&--dark {
+		color: $color-blue;
+	}
+
+	@media only screen and (max-width: $bp-medium) {
+		margin: 0;
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		margin: 0 2rem;
+	}
+}
+
+.btn {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 1.6rem 3rem;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s;
+	font-weight: 600;
+
+	&--light--hollow {
+		padding: 1.4rem 2rem !important;
+		background: none;
+		border: 2px $color-grey-light solid;
+		color: $color-grey-light;
+
+		&:hover {
+			background-color: rgba($color-blue-dark, 0.6);
+		}
+	}
+
+	&--yellow {
+		color: $color-blue-dark;
+		background-color: $color-yellow-light;
+
+		&:hover {
+			background-color: $color-yellow;
+		}
+	}
+
+	&--blue {
+		color: $color-grey-light;
+		background-color: $color-blue-light;
+
+		&:hover {
+			background-color: $color-blue;
+		}
+	}
+
+	&--blue--dark {
+		color: $color-grey-light;
+		background-color: $color-blue-dark;
+
+		&:hover {
+			background-color: $color-blue-darker;
+		}
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		padding: 1.6rem 2rem;
+	}
+}
+
+@import 'header';
+@import 'products';
+@import 'features';
+@import 'blog';
+@import 'partners';
+@import 'footer';

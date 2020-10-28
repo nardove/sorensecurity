@@ -1,0 +1,1 @@
+import{sum}from"./utils.js";export const exampleFn=o=>{console.log(`${o} ES ${sum(2,2)}`)};exampleFn("Terser works or is it?");

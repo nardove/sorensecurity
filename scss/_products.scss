@@ -1,0 +1,100 @@
+.products {
+	margin-top: $sections-spacing-top;
+	margin-bottom: $sections-spacing-bottom;
+
+	&__card__container {
+		margin-top: $sections-spacing-top;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+
+	&__card {
+		align-self: stretch;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		padding: 0 2rem;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		&__card__container {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		&__card {
+			margin-top: 6rem;
+			display: grid;
+			grid-template-columns: 30% 1fr;
+			grid-template-rows: repeat(3, 1fr);
+			grid-row-gap: 1rem;
+			grid-column-gap: 4rem;
+			justify-items: start;
+			text-align: left;
+		}
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		&__card {
+			align-self: stretch;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 0 2rem;
+		}
+	}
+}
+
+.card {
+	&__logo {
+		width: 100%;
+		height: 150px;
+	}
+
+	&__title {
+		font-size: 2.4rem;
+		color: $color-blue-dark;
+		margin: 2rem 0;
+	}
+
+	&__body {
+		color: $color-grey-dark;
+		font-size: 1.4rem;
+		margin-bottom: 2rem;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		&__logo {
+			height: 100px;
+			grid-row: 1 / -1;
+			align-self: start;
+		}
+
+		&__title {
+			margin: 0;
+		}
+
+		&__body {
+			margin: 0;
+		}
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		&__logo {
+			height: 100px;
+		}
+
+		&__title {
+			margin: 1rem 0;
+		}
+
+		&__body {
+			margin-bottom: 1rem;
+		}
+	}
+}

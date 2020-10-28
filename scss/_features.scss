@@ -1,0 +1,60 @@
+.features {
+	margin-top: calc(#{$sections-spacing-top} + 20px);
+	margin-bottom: $sections-spacing-bottom;
+
+	text-align: center;
+
+	&__card__container {
+		display: grid;
+		grid-template-rows: max-content max-content;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		align-content: center;
+		margin-top: $sections-spacing-top;
+
+		@media only screen and (max-width: $bp-medium) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media only screen and (max-width: $bp-smallest) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__card {
+		font-size: 1.4rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		padding: 2rem;
+	}
+
+	&__card__icon {
+		background-color: $color-grey-light;
+		width: 128px;
+		height: 128px;
+		position: relative;
+		border-radius: 100px;
+
+		&__svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			fill: $color-blue-light;
+			width: 60%;
+			height: 60%;
+		}
+
+		@media only screen and (max-width: $bp-medium) {
+			width: 84px;
+			height: 84px;
+		}
+	}
+
+	&__btn {
+		margin-top: 4rem;
+	}
+}
