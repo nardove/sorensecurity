@@ -4,7 +4,7 @@ Fictitious cyber security company website build using pure HTML and SASS. I crea
 
 ## Tools used
 
-<img style="float: left; margin-right: 10px" src="./dist/img/adobexd-logo.png">
-<img style="float: left; margin-right: 10px" src="./dist/img/vscode-logo.png">
-<img style="float: left; margin-right: 10px" src="./dist/img/html-logo.png">
-<img style="float: left; margin-right: 10px" src="./dist/img/sass-logo.png">
+![alt text](./readme-imgs/adobexd-logo.png 'Logo Title Text 1')
+![alt text](./readme-imgs/vscode-logo.png 'Logo Title Text 1')
+![alt text](./readme-imgs/html-logo.png 'Logo Title Text 1')
+![alt text](./readme-imgs/sass-logo.png 'Logo Title Text 1')
